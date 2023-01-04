@@ -46,6 +46,8 @@ object Completion {
   case object DropDatabase       extends Completion
   case object CreateRole         extends Completion
   case object DropRole           extends Completion
+  case object CreateTrigger      extends Completion
+  case object DropTrigger        extends Completion
   // more ...
 
   /**

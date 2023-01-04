@@ -79,6 +79,8 @@ object CommandComplete {
     case "DROP DATABASE"    => apply(Completion.DropDatabase)
     case "CREATE ROLE"      => apply(Completion.CreateRole)
     case "DROP ROLE"        => apply(Completion.DropRole)
+    case "CREATE TRIGGER"   => apply(Completion.CreateTrigger)
+    case "DROP TRIGGER"     => apply(Completion.DropTrigger)
     case Patterns.Select(s) => apply(Completion.Select(s.toInt))
     case Patterns.Delete(s) => apply(Completion.Delete(s.toInt))
     case Patterns.Update(s) => apply(Completion.Update(s.toInt))
